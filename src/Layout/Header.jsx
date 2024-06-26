@@ -5,9 +5,11 @@ import { LuMessageSquare } from "react-icons/lu";
 import { FaHandHoldingUsd } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { RiNotification3Line } from "react-icons/ri";
-import UserLogo from '../images/UserLogo.png';
+import { FaRegUser } from "react-icons/fa";
 
 const Header = () => {
+    const activePage = "jobs"; // This would typically come from props or state
+
     return (
         <div className='header-container'>
             <div className="header-left">
@@ -15,14 +17,14 @@ const Header = () => {
             </div>
             <div className="header-middle">
                 <ul className='header-list'>
-                    <li><FaSuitcase /> Jobs</li>
-                    <li><LuMessageSquare /> Messages</li>
-                    <li><FaHandHoldingUsd /> Payments</li>
+                    <li className={activePage === "jobs" ? "active" : ""}><FaSuitcase /> Jobs</li>
+                    <li className={activePage === "messages" ? "" : ""}><LuMessageSquare /> Messages</li>
+                    <li className={activePage === "payments" ? "" : ""}><FaHandHoldingUsd /> Payments</li>
                 </ul>
             </div>
             <div className="header-right">
                 <RiNotification3Line />
-                <img src={UserLogo} alt="User" className='user-logo' loading='lazy'/>
+                <FaRegUser />
                 <IoIosArrowDown />
             </div>
         </div>

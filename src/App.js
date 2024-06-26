@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from './Layout/Header';
+import ApplicationDasboard from "./Pages/User/ApplicationDasboard";
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Header />} />
+          <Route path="/" element={<ApplicationDasboard />} />
         </Routes>
       </Router>
     </>
