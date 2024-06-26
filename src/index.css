@@ -1,13 +1,65 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 120px;
+}
+
+.header-middle {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-list {
+  padding: .5vw;
+  border: 1px solid black;
+  border-radius: 200vw;
+}
+
+.header-middle ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-middle li {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header-middle li svg {
+  margin-right: 8px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-logo {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
