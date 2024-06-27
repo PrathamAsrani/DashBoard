@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   background-color: #f9f9f9;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .header-middle ul {
@@ -130,7 +130,7 @@
     width: 30px;
   }
 
-  .header-right{
+  .header-right {
     margin-top: 2vw;
     width: 20vw;
     justify-content: space-around;
@@ -162,7 +162,11 @@
 
 /* Application Dashboard CSS */
 
-.top-section{
+.Footer-logo{
+  width: 10vw;
+}
+
+.top-section {
   width: 100%;
   background-color: #f5f5f5;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -218,5 +222,346 @@
     font-size: 0.9rem;
     margin-bottom: 8px;
     padding: 8px;
+  }
+
+  /* Added margin-left for li tags in phone view */
+  li {
+    margin-left: 15px;
+  }
+}
+
+.main {
+  display: flex;
+}
+
+.main-left-section {
+  flex: 2.3;
+  padding: 1rem;
+}
+
+.job-header {
+  margin-bottom: 1rem;
+}
+
+.job-header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-header p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.status {
+  color: green;
+  font-weight: bold;
+}
+
+.details {
+  margin-bottom: 1rem;
+}
+
+.skills,
+.preferences {
+  margin-bottom: 1rem;
+}
+
+.skills h2,
+.preferences h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.skills ul,
+.preferences ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li,
+.preferences li {
+  margin-bottom: 0.3rem;
+}
+
+.preferences {
+  display: flex;
+  justify-content: space-between;
+}
+
+.one,
+.two,
+.three {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.two,
+.three {
+  border-left: none;
+}
+
+.job-description {
+  margin-bottom: 1rem;
+}
+
+.job-description h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-description ul {
+  margin-left: 2vw;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.job-description ol {
+  margin-left: 2vw;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.job-description li {
+  margin-bottom: 0.3rem;
+}
+
+.main-right-section {
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: .7;
+  padding: 1rem;
+}
+
+.main-right-section-top {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-right-section-top button {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.main-right-section-top button:first-child {
+  background-color: #e84e4e;
+  color: white;
+}
+
+.main-right-section-top button:last-child {
+  background-color: #333;
+  color: white;
+}
+
+.main-right-section-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 25%;
+  font-size: 1.2rem;
+}
+
+.main-right-section-bottom h4 {
+  width: 70%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.main-right-section-bottom h4:hover {
+  background-color: #eaeaea;
+  color: #007bff;
+}
+
+.separation {
+  border-color: grey;
+}
+
+.req-logos {
+  margin-right: 1vw;
+}
+
+.req-logos-li {
+  padding: .2vw 1vw;
+  border: 2px solid #dcd6d6;
+  border-radius: .5vw;
+}
+
+.company-info {
+  margin-top: 1vw;
+}
+
+.company-info-top-section {
+  margin-bottom: 2vw;
+}
+
+.company-info-top-section .company-title {
+  margin-bottom: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-info-top-section .company-title h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.company-info-bottom-section {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 2vw;
+}
+
+.company-info-bottom-section-left,
+.company-info-bottom-section-right {
+  width: 45%;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .main-left-section,
+  .main-right-section {
+    width: 100%;
+  }
+
+  .preferences {
+    flex-direction: column;
+  }
+
+  .one,
+  .two,
+  .three {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .main-right-section-top {
+    justify-content: space-around;
+  }
+
+  .main-right-section-bottom {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .main-right-section-bottom h4 {
+    width: 90%;
+    text-align: center;
+  }
+
+  .company-info-bottom-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .Footer-logo{
+    width: 30vw;
+    margin-top: 1vw;
+  }
+
+  .main-left-section {
+    padding: 0.5rem;
+  }
+
+  .job-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .job-header p {
+    font-size: 0.7rem;
+  }
+
+  .details {
+    margin-bottom: 0.5rem;
+  }
+
+  .skills h2,
+  .preferences h2 {
+    font-size: 0.9rem;
+  }
+  
+  .skills ul,
+  .preferences ul {
+    margin-left: 1vw;
+  }
+
+  .skills li,
+  .preferences li {
+    font-size: 0.8rem;
+  }
+
+  .preferences {
+    align-items: flex-start;
+  }
+
+  .one,
+  .two,
+  .three {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .job-description h2 {
+    font-size: 0.9rem;
+  }
+
+  .job-description ul,
+  .job-description ol {
+    margin-left: 1vw;
+  }
+
+  .job-description li {
+    font-size: 0.8rem;
+  }
+
+  /* Added margin-left for li tags in phone view */
+  li {
+    margin-left: 15px;
+  }
+
+  .main-right-section {
+    padding: 0.5rem;
+  }
+
+  .main-right-section-top {
+    flex-direction: column;
+  }
+
+  .main-right-section-top button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .main-right-section-bottom {
+    margin-left: 0;
+    align-items: flex-start;
+  }
+
+  .main-right-section-bottom h4 {
+    width: 90%;
+  }
+
+  .company-info-bottom-section {
+    flex-direction: column;
   }
 }

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ApplicationDasboard from "./Pages/User/ApplicationDasboard";
+import ApplicationDasboard from "./Pages/ApplicationDasboard";
 
 function App() {
   return (

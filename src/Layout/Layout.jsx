@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from "react-helmet"
 import Header from './Header';
 
-const Layout = ({ children, title = `Shop Now`, description = `MERN Stack Project`, keywords = `MERN, React, MongoDB, Express.js, Node.js`, author = `Pratham Asrani` }) => {
+const Layout = ({ children, title = `Application -- Dashboard`, description = `MERN Stack Project`, keywords = `MERN, React, MongoDB, Express.js, Node.js`, author = `Pratham Asrani` }) => {
     return (
         <div>
             <Helmet>
