@@ -7,23 +7,25 @@ To run the project please run the following commands:
 6. npm install
 7. npm start
 
-8. Desktop View:
+
+----- Responsive Views -----
+Desktop View:
 
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 
-9. Laptop View:
+Laptop View:
 
 ![alt text](image-4.png)
 
-10. Samsung Fold View:
+Samsung Fold View:
 
 ![alt text](image-3.png)
 
-11. Phone View:     
+Phone View:     
 
 ![alt text](image.png)
 
-12. Tablet View:
+Tablet View:
 
 ![alt text](image-5.png)
